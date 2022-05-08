@@ -1,0 +1,62 @@
+GitHub. HW_2
+1. На локальном репозитории сделать ветки для: 
+*В gibash создаем ветки через команду:  
+- Postman            git branch Postman
+- Jmeter             git branch Jmeter
+- CheckLists         git branch CheckLists
+- Bag Reports        git branch Bag_Reports 
+- SQL                git branch SQL
+- Charles            git branch Charles
+- Mobile testing     git branch Mobile_testing
+
+
+2. Запушить все ветки на внешний репозиторийgit
+*   git push --all -u
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+*
+git checkout Bag_Reports - прыгаем в ветку
+touch bag_reports.txt - создаем тексовый документ
+vim bag_reports.txt - добавляем текст
+жмем а - для печать, добавляем текст, esc _ :wq  _ enter
+
+4. Запушить структуру багрепорта на внешний репозиторий
+* 
+git add . - добавляем файл
+git commit -m "report" - коммитим, фотографируем на репозиторий
+git push - отправляем файл на внешний репозиторий
+
+5. Вмержить ветку Bag Reports в Main
+*
+git checkout main  - прыгаем ветку main 
+git merge Bag_Reports - мержим
+
+6. Запушить main на внешний репозиторий.
+*
+git push origin -u main
+
+7. В ветке CheckLists набросать структуру чек листа.
+*
+git checkout CheckLists  - прыгаем в ветку
+touch CheckLists.txt - создаем тексовый документ
+vim CheckLists.txt - добавляем текст
+жмем а - для печать, добавляем текст, esc _ :wq  _ enter
+
+8. Запушить структуру на внешний репозиторий
+*
+git add . - добавляем файл
+git commit -m "add" - коммитим, фотографируем на репозиторий
+git push - отправляем файл на внешний репозиторий
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+*
+В разделе Pull request - жмем new Pull request 
+Меняем ветки base: main - compare: checklsts
+Дополняем коммент (write) : checklist struckture и жмем "Create pull request"
+
+10. Синхронизировать Внешнюю и Локальную ветки Main
+*
+В консоле git:
+git checkout main - прыгаем в ветку 
+git fetch - смотрим изменения в реозитории
+git pull - синхронизирум изменения в репозиториях

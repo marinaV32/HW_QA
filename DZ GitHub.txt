@@ -1,0 +1,306 @@
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+New - имя репозитории JSON - галочка (файл readme)- ok
+
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+git clone https://github.com/marinaV32/JSON.git (ссылка из репозитории раздел https)
+ 
+6. Внутри локального JSON создать файл “new.json”.
+touch new.json
+
+ 
+7. Добавить файл под гит.
+git add new.json
+ 
+8. Закоммитить файл.
+git commit -m "my new"
+ 
+9. Отправить файл на внешний GitHub репозиторий.
+git push
+ 
+10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+vim new.json 
+жмем а на клавиатуре (команда дляя записи текста в редакторе)
+(пишем текст внутри)
+
+       {   "full name":"Prokopovich Marina", 
+          "age":"26",
+          "number of pets":"no",
+          "future desired salary":"2000$" }
+жмем Esc и  :wq(сохранить и выйти)
+         
+11. Отправить изменения на внешний репозиторий.
+git commit -am "filled"
+git push
+ 
+12. Создать файл preferences.json
+vim preferences.json (создаем и сразу редактируем)
+либо touch preferences.json
+
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+vim preferences.json
+жмем а на клавиатуре (команда дляя записи текста в редакторе)
+(пишем текст внутри)
+{ "favorite movie":"oath",
+    "favorite series":"from outside",
+    "favorite food":"pasta",
+    "favorite season":"spring",
+    "travel country":"Greece" }
+жмем Esc и  :wq(сохранить и выйти)
+         
+14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+vim sklls.json
+жмем а на клавиатуре (команда дляя записи текста в редакторе)
+(пишем текст внутри)
+ { "course qa":"hard skills,soft skills" }
+жмем Esc и  :wq(сохранить и выйти)
+ 
+15. Отправить сразу 2 файла на внешний репозиторий.
+git add .
+git commit -m "to fa"
+git push
+ 
+16. На веб интерфейсе создать файл bug_report.json. 
+В Гите заходим на наш репозиторий JSON, жмем "Создать новый файл", даем имя файлу - сохраняем
+
+17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON. 
+В репозитории находим нужный файл, жмем на редактирование (карандаш справа) и вводим текст
+
+{ "Name":"structure bug report",
+"Issue Title":"Pop-up window does not disappear until the date is not changed",
+"Issue Type":"Bug",
+"Priority":"Low",
+"Issue Status":"Blocked",
+"Author(Created by)":"Marina Prokopovich",
+"Severity":" ",
+"Build":" ",
+"Environment":" ", 
+"Name2":"Issue Description, Steps to reproduce",
+"step1":"Select any dish",
+"step2":"Go to the basket",
+"step3":"Select a date next to the last delivery date in the menu(e.x. menu 8-11 Nov, select 15 Nov)",
+"step4":"After the pop-up 'Delivery up t 14.11'appears click on the 'Change a date' button",
+"step5":"Look at the pop-up",
+
+"t1" = "Expected result:The pop-up 'Delivery up to 14.11' does not appear",
+"t2" = "Actual result:The Pop-up remains until the date is not changed to the suitable one" }
+
+Жмем сохранить и переходим в кансоль чтобы синхронизровать наши изменния с локальным и внешним репозиториями.
+ 
+19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 20. Синхронизировать внешний и локальный репозиторий JSON
++++++на 17-20: создала новый файл в репозитории, затем через консоль гид синхронизировала с локальным и внешним репозиторием: 
+git fetch   проверила
+git pull    синхронизировала
+Редактировала: добавила текст 
+git fetch   
+git pull
+
+
+XML
+ 21. Создать внешний репозиторий c названием XML.
+New - имя репозитории XML - галочка - ok
+ 
+22. Клонировать репозиторий XML на локальный компьютер.
+git clone git clone https://github.com/marinaV32/XML.git (ссылка из репозитории раздел https)
+ 
+23. Внутри локального XML создать файл “new.xml”.
+touch new.xml
+ 
+24. Добавить файл под гит.
+git add new.xml
+ 
+25. Закоммитить файл.
+git commit -m "new"
+ 
+26. Отправить файл на внешний GitHub репозиторий.
+git push
+ 
+27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+vim new.xml
+жмем а на клавиатуре (команда дляя записи текста в редакторе)
+(пишем текст внутри)
+ 
+<?xml version="1.0" encoding="UTF-8"?> 
+ <xml>
+          <fullname> "Prokopovich Marina" </fullname>
+          <age> "26" </age>
+          <numberofpets> "no" </numberofpets>
+          <futuredesiredsalary> "2000$" </futuredesiredsalary>
+               </xml>
+жмем Esc и  :wq(сохранить и выйти) 
+
+28. Отправить изменения на внешний репозиторий.
+git commit -am "get"
+git push
+
+29. Создать файл preferences.xml
+touch preferences.xml
+
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+vim preferences.xml
+жмем а на клавиатуре (команда дляя записи текста в редакторе)
+
+<?xml version="1.0" encoding="UTF-8"?> 
+ <xml>
+        <favoritemovie> "oath" </favoritemovie>
+        <favoriteseries> "from outside" </favoriteseries>
+        <favoritefood> "pasta" </favoritefood>
+        <favoriteseason> "spring" </favoriteseason>
+        <travelcountry> "Greece" </travelcountry>
+ </xml>
+жмем Esc и  :wq(сохранить и выйти) 
+
+31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+vim sklls.xml
+
+<?xml version="1.0" encoding="UTF-8"?> 
+<xml>
+        <courseQA> "soft skills,hard skills" </courseQA>
+</xml>
+ 32. Сделать коммит в одну строку.
+git add . | git commit -m "create new files"
+ 
+33. Отправить сразу 2 файла на внешний репозиторий.
+git add .
+git commit -m "new"
+git push
+ 
+34. На веб интерфейсе создать файл bug_report.xml.
+В Гите заходим на наш репозиторий XML, жмем "Создать новый файл", даем имя файлу - сохраняем
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+Редактируем - добавляем екст - сохраняем
+
+<?xml version="1.0" encoding="UTF-8"?> 
+<bugreport>
+<Name> structure bug report </Name>
+<IssueTitle> Pop-up window does not disappear until the date is not changed </IssueTitle> 
+<IssueType> Bug </IssueType>
+<Priority> Low </Priority>
+<IssueStatus> Blocked </IssueStatus>
+<Author> Marina Prokopovich </Author>
+<Severity> " " </Severity>
+<Build> " " </Build>
+<Environment> " " </Environment>
+<Name2> Issue Description, Steps to reproduce </Name2>
+<step1> Select any dish </step1>
+<step2> Go to the basket </step2> 
+<step3> Select a date next to the last delivery date in the menu(e.x. menu 8-11 Nov, select 15 Nov) </step3>
+<step4> After the pop-up 'Delivery up t 14.11'appears click on the 'Change a date' button </step4>
+<step5> Look at the pop-up </step5>
+
+<Expectedresult> The pop-up 'Delivery up to 14.11' does not appear </Expectedresult>
+<Actualresult> The Pop-up remains until the date is not changed to the suitable one </Actualresult>
+</bugreport>
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 38. Синхронизировать внешний и локальный репозиторий XML
+++++++на 34-38: создала новый файл в репозитории, затем через консоль гид синхронизировала с локальным и внешним репозиторием: 
+git fetch   проверила
+git pull    синхронизировала
+Редактировала: добавила текст 
+git fetch   
+git pull
+
+TXT
+ 1. Создать внешний репозиторий c названием TXT.
+New - имя репозитории XML - галочка - ok
+ 
+2. Клонировать репозиторий TXT на локальный компьютер.
+git clone git clone https://github.com/marinaV32/TXT.git (ссылка из репозитории раздел https)
+ 
+3. Внутри локального TXT создать файл “new.txt”.
+vim new.txt
+ 
+4. Добавить файл под гит.
+git add new.txt
+ 
+5. Закоммитить файл.
+git commit -m "new"
+ 
+6. Отправить файл на внешний GitHub репозиторий.
+git push
+ 
+7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+vim new.txt
+1) Full name: Prokopovich Marina
+2)Age: 26
+3)Number of pets: no
+3)Future desired salary: n
+
+esc - :wq (enter)
+ 
+8. Отправить изменения на внешний репозиторий.
+git commit -am "new"
+git push
+ 
+9. Создать файл preferences.txt
+vim preferences.txt
+ 
+10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+ 1)Favorite movie: Oath
+2)Favorite series: From outside
+3)Favorite food: pasta
+4)Travel Country: Greece
+
+11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+vim sklls.txt
+"The QA course will study soft skills and hard skills"
+esc - :wq (enter)
+
+ 12. Сделать коммит в одну строку.
+git add . | git commit -m "red"
+ 
+13. Отправить сразу 2 файла на внешний репозиторий.
+git push
+ 
+14. На веб интерфейсе создать файл bug_report.txt.
+В Гите заходим на наш репозиторий TXT, жмем "Создать новый файл", даем имя файлу - сохраняем
+
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+Нажимаем в репозитории измениь файл (карандаш), добавляем текст и сохраняем.
+**************
+Шапка
+1. Короткое описание (Summary)
+2. Короткое описание проблемы, явно указывающее на причину и тип ошибочной ситуации.
+3. Проект (Project)	Название тестируемого проекта
+4.Компонент приложения (Component)	Название части или функции тестируемого продукта
+5.Номер версии (Version)	Версия на которой была найдена ошибка
+6.Серьезность (Severity)	
+7.Наиболее распространена пятиуровневая система градации серьезности дефекта:
+
+8.S1 Блокирующий (Blocker)
+9.S2 Критический (Critical)
+10.S3 Значительный (Major).
+11.S4 Незначительный (Minor)
+12.S5 Тривиальный (Trivial)
+13.Приоритет (Priority)	
+14.Приоритет дефекта:
+
+15.P1 Высокий (High)
+16.P2 Средний (Medium)
+17.P3 Низкий (Low)
+18.Статус (Status)	Статус бага. Зависит от используемой процедуры и жизненного цикла бага (bug workflow and life cycle)
+19.Автор (Author)	Создатель баг репорта
+20.Назначен на (Assigned To)	Имя сотрудника, назначенного на решение проблемы
+21.Окружение
+22.ОС / Сервис Пак и т.д. / Браузера + версия / ...	Информация об окружении, на котором был найден баг: операционная система, сервис пак, для WEB тестирования - имя и версия браузера и т.д.
+...	 
+Описание
+23.Шаги воспроизведения (Steps to Reproduce)	Шаги, по которым можно легко воспроизвести ситуацию, приведшую к ошибке.
+24.Фактический Результат (Result)	Результат, полученный после прохождения шагов к воспроизведению
+25.Ожидаемый результат (Expected Result)	Ожидаемый правильный результат
+Дополнения
+26.Прикрепленный файл (Attachment)	Файл с логами, скриншот или любой другой документ, который может помочь прояснить причину ошибки или указать на способ решения проблемы
+ **************
+17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+++++++на 14-18: создала новый файл в репозитории, затем через консоль гид синхронизировала с локальным и внешним репозиторием: 
+git fetch   проверила
+git pull    синхронизировала
+Редактировала: добавила текст 
+git fetch   
+git pull
